@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-family: Helvetica, Verdana, sans-serif;
   font-size: 1.2em;
@@ -30,4 +36,25 @@ h2 {
 
 .author-text {
   font-size: 1.2em;
+}
+
+.container {
+  width: 1140px;
+  margin: 20px auto 0 auto;
+}
+
+.blog-area {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+}
+
+.sidebar-area {
+  width: 25%;
+  float: left;
+}
+
+.footer-area {
+  padding-top: 20px;
+  border-top: 1px solid #808080;
 }
