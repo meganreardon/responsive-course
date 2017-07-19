@@ -82,6 +82,36 @@ h2:after {
   margin: 30px auto 0px auto;
 }
 
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 /* ----- PARAGRAPHS ----- */
 .long-copy {
   line-height: 145%;
@@ -185,6 +215,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -344,4 +375,15 @@ header {
 
 .city-feature {
   margin-bottom: 5px;
+}
+
+/* ------------------------------------------- */
+/* CUSTOMER TESTIMONIALS */
+/* ------------------------------------------- */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
 }
