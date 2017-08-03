@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  /* TODO: fix smooth scrolling from top nav links */
+  /* TODO: link top logo to return to top of page and use smooth scrolling */
+
   /* for the sticky navigation */
   /* uses the Waypoint jquery code from http://imakewebthings.com/waypoints/guides/jquery-zepto/ */
   $('.js--section-features').waypoint(function(direction) {
@@ -79,6 +82,24 @@ $(document).ready(function() {
     }
   });
 
+  /* maps */
+  var map = new GMaps({
+    div: '.map',
+    lat: 38.7436057,
+    lng: -9.05,
+    zoom: 12
+  });
+
+  map.addMarker({
+    lat: 38.7436057,
+    lng: -9.2302437,
+    title: 'Lisbon',
+    infoWindow: {
+      content: '<p>Our Lisbon HQ</p>'
+    }
+  });
+
 });
+
 
 /* TODO: add hash link to logo to bring user back to top of page */
