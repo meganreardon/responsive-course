@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  /* TODO: fix smooth scrolling from top nav links */
+  /* TODO: link top logo to return to top of page and use smooth scrolling */
+
   /* for the sticky navigation */
   /* uses the Waypoint jquery code from http://imakewebthings.com/waypoints/guides/jquery-zepto/ */
   $('.js--section-features').waypoint(function(direction) {
